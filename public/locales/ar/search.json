@@ -1,0 +1,13 @@
+{
+  "in-map": "على الخريطة",
+  "search": "فلتر",
+  "hotels": "فنادق",
+  "available-x-hotels": "{{hotels}} فندق متوفر ",
+  "available-x-rooms": "{{room}} غرفة ",
+  "for-x-nights": "لمدة {{nights}} ليالٍ",
+  "x-rooms": "{{rooms}} غرف  مقابل ",
+  "best-value": "أفضل قيمة",
+  "clients-number": "عدد النزلاء",
+  "capacity": "تتسع ل {{capacity}} اشخاص",
+  "back-to-hotels-list": "العودة لقائمة الفنادق"
+}

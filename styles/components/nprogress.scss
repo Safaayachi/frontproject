@@ -1,0 +1,80 @@
+/* Make clicks pass-through */
+/* Fancy blur effect */
+/* Remove these to get rid of the spinner */
+@-webkit-keyframes nprogress-spinner {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}
+@keyframes nprogress-spinner {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+#nprogress {
+	.bar {
+		@apply bg-primary;
+		position: fixed;
+		z-index: 1031;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 2px;
+	}
+	.peg {
+		display: block;
+		position: absolute;
+		right: 0px;
+		width: 100px;
+		height: 100%;
+		box-shadow: 0 0 10px, 0 0 5px;
+		@apply shadow-primary;
+		opacity: 1;
+		-webkit-transform: rotate(3deg) translate(0px, -4px);
+		-ms-transform: rotate(3deg) translate(0px, -4px);
+		transform: rotate(3deg) translate(0px, -4px);
+	}
+	.spinner {
+		display: block;
+		position: fixed;
+		z-index: 1031;
+		top: 2px;
+		right: 0px;
+		left: 0px;
+		bottom: 0px;
+		width: 100%;
+		height: calc(100% - 2px);
+		background-color: rgba($color: #000000, $alpha: 0.8);
+	}
+	.spinner-icon {
+		position: absolute;
+		top: calc(50% - 30px);
+		right: calc(50% - 30px);
+		width: 60px;
+		height: 60px;
+		box-sizing: border-box;
+		border: solid 4px transparent;
+		@apply border-t-primary border-l-primary;
+		border-radius: 50%;
+		-webkit-animation: nprogress-spinner 400ms linear infinite;
+		animation: nprogress-spinner 400ms linear infinite;
+	}
+}
+.nprogress-custom-parent {
+	overflow: hidden;
+	position: relative;
+	#nprogress {
+		.spinner {
+			position: absolute;
+		}
+		.bar {
+			position: absolute;
+		}
+	}
+}

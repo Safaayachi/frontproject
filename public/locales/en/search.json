@@ -1,0 +1,13 @@
+{
+  "in-map": "On the map.",
+  "search": "WL",
+  "hotels": "Hotels",
+  "available-x-hotels": "{{hotels}} hotel available ",
+  "available-x-rooms": "{{room}} room ",
+  "for-x-nights": "For {{nights}} nights",
+  "x-rooms": "{{rooms}} room for",
+  "best-value": "Best value",
+  "clients-number": "Clints Number",
+  "capacity": "Accommodates {{capacity}} people",
+  "back-to-hotels-list": "Back to hotel menu"
+}
